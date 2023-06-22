@@ -1,0 +1,51 @@
+
+
+<%- include('partials/header') %>
+
+   <body id="searchPage">
+    
+    <h1>Ah ha.. Here what we found.</h1>
+   
+   
+    <div class="container">
+    <table class="table table-striped table-responsive">
+        <thead>
+          
+          <tr>
+            <th>Full URL</th>
+            <th>Short URL</th>
+            <th>Tag</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+            <% if (searchResults.length === 0) { %>
+                <p>No results found.</p>
+        <% } else { %>
+        <% searchResults.forEach(searchResults => { %>
+            <tr>
+              <td><a href="<%= searchResults.full %>"><%= searchResults.full %></a></td>
+              <td><a href="<%= searchResults.short %>"><%= "http://localhost:3000/"+ searchResults.short %></a></td>
+              <td><h3><%= searchResults.name %></h3></td>
+                
+            </tr>
+          <% }) %>
+          
+         
+          <% } %>
+        </tbody>
+      </table>
+      <button class="btn btn-outline"><a href="/">Back to Home.</a></button>
+    </div>
+
+    <section id="searchfooter">
+      <i class=" footer-icon fa-brands fa-twitter"></i>
+      <i class=" footer-icon fa-brands fa-facebook"></i>
+      <i class=" footer-icon fa-brands fa-instagram"></i>
+      <i class=" footer-icon fa-solid fa-envelope"></i>
+  
+      <p class="footer-para">© Copyright2023 LinkTrim</p>
+    </section>
+  
+  </body>
+    <%- include('partials/footer') %>

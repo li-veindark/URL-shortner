@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Secrets</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200&family=Bodoni+Moda:wght@400;800;900&family=Gasoek+One&family=Grandiflora+One&family=Moirai+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bc624561b2.js" crossorigin="anonymous"></script>
+  
+  <style>
+
+
+/* profile-page */
+
+html,body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+/* nav-bar */
+nav{
+  background-color: #4E9CAF;
+  padding-bottom: 2px;
+  
+}  
+  
+.left{
+  
+  margin-left: 10rem;
+}
+.left a{
+  margin-right: 4rem;
+  position: relative;
+  top: 2.1rem;
+  font-family: 'Grandiflora One', serif;
+  color: aliceblue;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  
+  
+}
+/*right-part of navbar*/
+
+.right{
+  margin-left: 64rem;
+}
+ .right a{
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    padding: 5px 8px 5px 8px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Grandiflora One', serif;
+    font-weight: 600;
+    margin-left: 22rem;
+    outline: 1.5px solid aliceblue;
+    
+}
+
+.right a:hover{
+  background-color: aliceblue;
+  color: #4E9CAF;
+}
+
+header{
+  position: relative;
+  bottom: 2rem;
+  left: 12rem;
+}
+
+header h1{
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 25px;
+  color: aliceblue;
+
+}
+
+header img{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  outline: 1px solid aliceblue;
+}
+
+/* section-1 */
+
+#search{
+  padding-top: 10rem;
+  background-color: #DBDFAA;
+  padding-bottom: 5rem;
+}
+
+.flex-container{
+  display: flex;
+  margin-top: 2rem;
+  
+}
+.flex-container p{
+  
+  font-family: 'Bodoni Moda', serif;
+  font-size: 6.5rem;
+  color: #73A9AD;
+  font-weight: 900;
+  margin-left: 10rem ;
+  line-height: 1.05;
+  width: 45rem;
+}
+.flex-container img{
+  width: 40%;
+  height: 35%;
+  margin-right:15rem;
+  
+ 
+}
+
+#search form input{
+  width: 30rem;
+  margin:2rem 0 0 10rem;
+  height: 35px;
+  border-radius: 4px;
+  border-color: #73A9AD;
+  border-style: none;
+  box-shadow: 4px 4px  #B3C890;
+}
+
+
+
+#search form button{
+  margin-right: 2px;
+  margin-bottom: 5px;
+  width: 100px;
+}
+#search h5{
+  font-family: 'Grandiflora One', serif;
+  color: #73A9AD;
+  font-size: 30px;
+  font-weight: 900;
+  margin-left: 10rem;
+}
+
+#urls{
+  background-color: #B3C890;
+  padding: 5rem 0 10rem 0;
+  text-align: center;
+}
+
+#urls h1{
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  margin-top: 3rem;
+  color: #F5F0BB;
+
+}
+
+#urls p{
+  font-family: 'Grandiflora One', serif;
+  font-size: 20px;
+  margin-top: 1rem;
+  color: aliceblue;
+  font-weight: 700;
+}
+
+#urls input{
+  width: 30rem;
+  margin-top: 2rem;
+  height: 35px;
+  border-radius: 4px;
+  border-color: #73A9AD;
+  border-style: none;
+  box-shadow: 4px 4px  grey;
+}
+
+#urls button{
+  margin: 2.1rem 0 0 0.5rem;
+  width: 7rem;
+}
+
+table{
+  text-align: center;
+  max-width: fit-content;
+  margin-top: 3rem;
+  padding: 0;
+   outline: 1px solid aliceblue;
+
+}
+
+th{
+  background-color: rgb(219, 223, 170,0.3);
+  padding: 0;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 24px;
+  color: aliceblue;
+}
+
+td{
+  background-color: rgba(252, 253, 251, 0.3);
+  padding: 0;
+}
+
+tr a{
+  font-family: 'Grandiflora One', serif;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  color: aliceblue;
+
+}
+
+td button{
+  border: none;
+  
+  position: relative;
+  bottom: 1.5rem;
+}
+
+td h3{
+  font-family: 'Grandiflora One', serif;
+  color: whitesmoke;
+  font-size: 26px;
+  font-weight: 600;
+
+}
+
+
+#footer{
+    background-color: rgb(230, 248, 202);
+    padding: 2% 15% 2%;
+    text-align: center;
+    
+}
+
+.footer-icon{
+    margin: 0 2% 1.8% 0;
+    position: relative;
+    left: 12px;
+}
+
+/* Search-page-css */
+
+#searchPage{
+  background-color: #B3C890; 
+  text-align: center;
+  text-decoration: none;
+}
+
+#searchPage h1{
+  font-family: 'Bodoni Moda', serif;
+  font-size: 65px;
+  font-weight: 900;
+  margin-top: 3rem;
+  color: #F5F0BB;
+  margin-top: 5rem;
+}
+
+#searchPage table{
+  text-align: center;
+  max-width: fit-content;
+  margin-top: 5rem;
+  margin-left: 12.5rem;
+  padding: 0;
+   outline: 1px solid aliceblue;
+}
+#searchPage button{
+  margin-left: 3rem;
+  outline: 1px solid aliceblue;
+}
+
+#searchPage button:hover{
+  background-color: aliceblue;
+  
+}
+
+#searchPage a{
+   text-decoration: none;
+   font-family: 'Advent Pro', sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   color: aliceblue;
+}
+
+#searchPage a:hover{
+  color: #B3C890;
+}
+#searchfooter{
+    
+    background-color: rgb(230, 248, 202);
+    
+    text-align: center;
+    margin-top: 16rem;
+    padding: 3rem 0 2rem 0;
+   
+}
+.footer-icon{
+    margin: 0 2% 1.8% 0;
+ 
+}
+
+
+/*Home-page-css*/
+#home{
+  display: flex;
+  justify-content: center;
+  
+  width: 90rem;
+  height: 50rem;
+}
+#home h3{
+  
+  font-family: 'Moirai One', cursive;
+  font-size: 30px;
+  color: black;
+  font-weight: 400;
+  margin-top: 1.4rem;
+}
+
+#home i{
+  margin: 2rem 2px 0 2rem;
+}
+
+#home img{
+  width: 100%;
+  height: 80%;
+  position: relative;
+  right: 4rem;
+  top: 6rem;
+}
+.middle{
+  margin-top: 18rem;
+}
+
+.middle h1{
+  font-family: 'Bodoni Moda', serif;
+  color: #F2BE22;
+  font-weight: 700;
+  font-size: 70px;
+}
+
+.middle p{
+  font-family: 'Grandiflora One', serif;
+  font-weight: 700;
+  color: black;
+
+}
+
+.middle a{
+  text-decoration: none;
+  color: black;
+}
+
+.middle button{
+  box-shadow: 2px solid gray ;
+}
+
+.middle a:hover{
+  color: aliceblue;
+}
+  </style>
+ 
+
+</head>
+
+
