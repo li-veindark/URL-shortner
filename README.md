@@ -1,2 +1,2 @@
-# URL-shortner
-ACM project in which we are going to make a URLs shortening website.
+# URL-shortener
+A website that can shorten your long URLs.
