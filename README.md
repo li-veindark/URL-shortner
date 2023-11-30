@@ -13,7 +13,7 @@ They can always search for thier URLs, Delete them if they wish to do so.
 ## Running the project
 
 First clone this repository by typing this in command line : 
-### git clone https://github.com/Pratham3273/URL-Shortener.git
+### https://github.com/li-veindark/URL-shortner.git
 
 Next, install all dependencies using :
 ### npm i
